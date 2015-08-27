@@ -9,7 +9,7 @@ $("a[href^='#']").on('click', function(e) {
    // animate
    $('html, body').animate({
        scrollTop: $(this.hash).offset().top
-     }, 600, function(){
+    }, 500, function(){
 
        // when done, add hash to url
        // (default click behaviour)
