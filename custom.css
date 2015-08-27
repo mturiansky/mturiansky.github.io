@@ -3,5 +3,46 @@
  */
 
 body {
+    background-color: #000000;
+}
+
+.navbar-inverse {
+    background-color: #000000;
+}
+
+section {
     padding-top: 50px;
+}
+
+#main {
+    /*background-color: #ffffff;*/
+    background-image: url("server.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#main-box {
+    background-color: rgba(0, 85, 170, 0.9);
+    color: black;
+}
+
+.vertical-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about {
+    background-color: #eeeeee;
+    height: 100vh;
+}
+
+#resume {
+    background-color: #dddddd;
+    height: 100vh;
+}
+
+#contact {
+    background-color: #cccccc;
+    height: 100vh;
 }
