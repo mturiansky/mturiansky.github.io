@@ -2,8 +2,6 @@
  * overrides many of bootstrap's default values
  */
 
-/* must remove height: 100vh from the section ids before publising */
-
 body {
     background-color: #000000;
 }
@@ -24,7 +22,7 @@ section {
 
 #main-box {
     margin: auto;
-    background-color: rgba(0, 85, 170, 0.9);
+    background-color: rgba(0, 85, 170, 0.95);
     color: black;
 }
 
@@ -35,22 +33,18 @@ section {
 }
 
 #about {
-    background-color: #eeeeee;
-    /*height: 100vh;*/
+    background-color: #445566;
 }
 
 #resume {
-    background-color: #dddddd;
-    height: 100vh;
+    background-color: #0055aa;
 }
 
 #contact {
-    background-color: #cccccc;
-    height: 85vh;
+    background-color: #bbbbbb;
 }
 
 #footer {
-    padding-top: 0;
     height: 15vh;
     color: #777;
     display: flex;
