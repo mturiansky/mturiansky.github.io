@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    padding: 50px 0 60px 0;
+    padding: 40px 0 60px 0;
 }
 
 #main {
@@ -39,6 +39,12 @@ section {
 
 #resume {
     background-color: #0055aa;
+}
+
+.res-bor {
+    /*should match the color of text*/
+    border-left: 1px solid #e7e7e7;
+    margin-bottom: 20px;
 }
 
 #contact {
