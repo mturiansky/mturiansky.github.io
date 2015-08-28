@@ -15,7 +15,7 @@ section {
 }
 
 #main {
-    background-image: url("http://mturiansky.github.io/server.jpg");
+    /*background-image: url("http://mturiansky.github.io/server.jpg");*/
     background-size: cover;
     height: 100vh;
 }
