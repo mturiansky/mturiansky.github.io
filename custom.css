@@ -15,7 +15,7 @@ section {
 }
 
 #main {
-    /*background-image: url("http://mturiansky.github.io/server.jpg");*/
+    background-image: url("https://mturiansky.github.com/lab.jpg");
     background-size: cover;
     max-height: 100vh;
 }
@@ -28,12 +28,13 @@ section {
 
 .vertical-center {
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
 }
 
 #about {
-    background-color: #445566;
+    background-color: #bbbbbb;
     /*color: #e7e7e7;*/
 }
 
