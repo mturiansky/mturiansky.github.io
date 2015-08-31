@@ -1,3 +1,5 @@
+
+//this function is used to add smooth scrolling to different views of the website
 $("a[href^='#']").on('click', function(e) {
    e.preventDefault();
    var hash = this.hash;
@@ -8,6 +10,8 @@ $("a[href^='#']").on('click', function(e) {
    });
 });
 
+//this function is used to change the active link in the navbar in accordance
+//with how far down the page the user has scrolled
 $(document).scroll(function() {
     var t = $(this).scrollTop() + $(window).height() / 2;
 

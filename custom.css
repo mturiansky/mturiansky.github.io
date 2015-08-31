@@ -18,6 +18,8 @@ a:hover {
     color: #bb0022;
 }
 
+/*definitions for each of the views*/
+
 #main {
     background-image: url("http://mturiansky.github.io/lab.jpg");
     background-size: cover;
