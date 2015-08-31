@@ -14,6 +14,14 @@ section {
     padding: 40px 0 60px 0;
 }
 
+a {
+    color: #440101;
+}
+
+a:hover {
+    color: #bb0022;
+}
+
 #main {
     background-image: url("http://mturiansky.github.io/lab.jpg");
     background-size: cover;
@@ -22,8 +30,8 @@ section {
 
 #main-box {
     margin: auto;
-    background-color: rgba(0, 85, 170, 0.95);
-    color: black;
+    background-color: rgba(119, 0, 17, 0.9);
+    color: #99aabb;
 }
 
 .vertical-center {
@@ -34,12 +42,13 @@ section {
 }
 
 #about {
-    background-color: #bbbbbb;
-    /*color: #e7e7e7;*/
+    background-color: #99aabb;
+    color: #440101;
 }
 
 #resume {
-    background-color: #0055aa;
+    background-color: #7e1726;
+    color: #99aabb;
 }
 
 .res-bor {
@@ -49,7 +58,8 @@ section {
 }
 
 #contact {
-    background-color: #bbbbbb;
+    background-color: #99aabb;
+    color: #440101;
 }
 
 #footer {
@@ -70,8 +80,8 @@ section {
 
  /* navbar */
  .navbar-default {
-     background-color: #F8F8F8;
-     border-color: #E7E7E7;
+     background-color: #fff;
+     border-color: #101010;
  }
  /* title */
  .navbar-default .navbar-brand {
