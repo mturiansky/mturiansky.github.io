@@ -16,8 +16,10 @@ $(document).scroll(function() {
         $('#main-button').addClass('active');
     } else if(t >= $('#about').position().top && t < $('#resume').position().top) {
         $('#about-button').addClass('active');
-    } else if(t >= $('#resume').position().top && t < $('#contact').position().top) {
+    } else if(t >= $('#resume').position().top && t < $('#projects').position().top) {
         $('#resume-button').addClass('active');
+    } else if(t >= $('#projects').position().top && t < $('#contact').position().top) {
+        $('#projects-button').addClass('active');
     } else if(t >= $('#contact').position().top) {
         $('#contact-button').addClass('active');
     }

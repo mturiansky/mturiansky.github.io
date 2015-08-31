@@ -6,10 +6,6 @@ body {
     background-color: #000000;
 }
 
-.navbar-inverse {
-    background-color: #000000;
-}
-
 section {
     padding: 40px 0 60px 0;
 }
@@ -52,9 +48,21 @@ a:hover {
 }
 
 .res-bor {
-    /*should match the color of text*/
     border-left: 1px solid #e7e7e7;
     margin-bottom: 20px;
+}
+
+#projects {
+    background-color: #000000;
+    color: #99aabb;
+}
+
+#projects a {
+    color: #99aabb;
+}
+
+#projects a:hover {
+    color: #bb0022;
 }
 
 #contact {
@@ -63,10 +71,12 @@ a:hover {
 }
 
 #footer {
+    background-color: #bbbbbb;
     max-height: 15vh;
-    color: #777;
+    color: #7e1726;
     display: flex;
     align-items: center;
+    border-top: 1px solid #101010;
 }
 
 #foot-vert-center {
@@ -80,7 +90,7 @@ a:hover {
 
  /* navbar */
  .navbar-default {
-     background-color: #000000;
+     background-color: #bbbbbb;
      border-color: #101010;
  }
  /* title */
