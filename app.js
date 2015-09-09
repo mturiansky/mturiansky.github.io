@@ -1,11 +1,20 @@
 var express = require('express');
 var swig = require('swig');
+var bodyParser = require('body-parser');
+var json = require('express-json');
 var app = express();
 
 app.engine('html', swig.renderFile);
 
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+app.use(json());
 
 app.use(express.static('static'));
 
@@ -36,7 +45,10 @@ app.get('/send_mail', function (req, res) {
 });
 
 app.post('/send_mail', function (req, res) {
-
+    console.log('\t[POST RECEIVED][%s][%s][%s]', req.body.name, req.body.email, req.body.message);
+    res.render('send_mail', { custommailjs:true }, function (err, html) {
+        res.send(html);
+    });
 });
 
 var server = app.listen(3000, function () {

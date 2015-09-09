@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "express": "~4.13.3",
-    "swig": "~1.4.2"
+    "swig": "~1.4.2",
+    "body-parser": "~1.13.3",
+    "express-json": "~1.0.0"
   }
 }
