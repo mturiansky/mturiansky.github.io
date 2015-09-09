@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <!-- main view that provides an introduction to the site -->
+    <section id="main">
+        <div class="container vertical-center">
+            <div id="main-box" class="jumbotron text-center">
+                <h1>Mark Turiansky</h1>
+                <h4>Aspiring Physicist and Computer Scientist</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- about view which provides basic information about myself -->
+    <section id="about">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>About</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"><!-- spacer --></div>
+                <div class="col-md-6">
+                    <img src="me.jpg" alt="Oops. We can't locate this image" class="img-responsive img-circle center-block">
+                </div>
+                <div class="col-md-3"><!-- spacer --></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"><!-- spacer --></div>
+                <div class="col-md-6 text-center" style="margin: auto;">
+                    <h2>My name is Mark Turiansky.</h2>
+                    <p>I am 20 years old, from New Jersey. Currently, I am attending University of Florida as a double major in Physics and Computer Science. After my undergraduate studies, I plan on pursuing a graduate degree in Physics. In my free time, I read scientific papers, work on various programming projects, and play guitar.</p>
+                </div>
+                <div class="col-md-3"><!-- spacer --></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bulk of the information about my experience, resume -->
+    <section id="resume">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Resume</h1>
+            </div><!--row 0 -->
+
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Education</h3>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><i>August 2013-Present (Expected April 2017)</i><br><b>Undergraduate at University of Florida</b><br>BS: Physics<br>GPA: 3.895<br>Relevant Courses:</p>
+                    <div class="col-md-6">
+                        <p>Quantum Mechanics<br>Introduction to Theoretical Physics</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Enriched Modern Physics<br>Enriched Physics 1/2</p>
+                    </div>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><i>August 2013-Present (Expected April 2017)</i><br><b>Undergraduate at University of Florida</b><br>BS: Computer Science<br>GPA: 4.000<br>Relevant Courses:</p>
+                    <div class="col-md-6">
+                        <p>Data Structures and Algorithms<br>Programming Fundamentals 1/2</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Programming for Engineers(MATLAB)<br>Digital Logic</p>
+                    </div>
+                </div>
+            </div><!-- row 1 -->
+
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Experience</h3>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><i>August 2014-Present</i><br><b>Undergraduate Research in Condensed Matter</b><br>Research Student, Gainesville, Fla.</p>
+                    <div class="col-md-12">
+                        <p><br>Studied under Dr. Andrew Rinzler on the design and use of nanomaterials<br>Extensive work with electrochemical methods, employed to study the physical properties of various electrodes fabricated in the lab<br>Wrote quarterly reports and prepared data for these reports</p>
+                    </div>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><i>January 2015-May 2015</i><br><b>COP2271 Programming Fundamentals for Engineers (MATLAB)</b><br>Undergraduate Teaching Assistant, Gainesville, Fla.</p>
+                    <div class="col-md-12">
+                        <p><br>Employed as a teaching assistant under Dr. Ira Hill<br>Assisted many students with understanding the programming language, MATLAB, by holding office hours twice a week</p>
+                    </div>
+                </div>
+            </div><!-- row 2 -->
+
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Skills</h3>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><b>Programming Languages</b><br>Code samples can be obtained from <a href="https://github.com/mturiansky">Github</a> or by request<br>Languages listed by fluency:</p>
+                    <div class="col-md-6">
+                        <p>C++/C<br>Python<br>MATLAB</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Java<br>HTML/CSS/JavaScript<br>Bash</p>
+                    </div>
+                </div>
+                <div class="col-md-5 res-bor">
+                    <p><b>Software</b><br>List of software proficiencies:</p>
+                    <div class="col-md-6">
+                        <p>Unix-based Systems<br>LaTeX<br>Microsoft Office</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>OpenCV<br>Aftermath<br>Origin Lab</p>
+                    </div>
+                </div>
+            </div><!-- row 3 -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>A pdf version of this resume can be downloaded <a href="http://mturiansky.github.io/resume.pdf">here</a></p>
+                </div>
+            </div>
+        </div><!-- container -->
+    </section>
+
+    <!-- links to major github projects I have created -->
+    <section id="projects">
+        <div class="container text-center">
+            <div class="page-header">
+                <h1>Personal Projects</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/mturiansky/imgurclone"><i class="fa fa-picture-o fa-5x"></i></a><br>
+                    <h3>ImgurClone</h3>
+                    <p>This is a project I developed in order to learn about how the Python library, Flask, works. It is designed to server up images and allow for uploading of images.</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/mturiansky/imgurclone-backend"><i class="fa fa-cloud fa-5x"></i></a><br>
+                    <h3>ImgurClone-backend</h3>
+                    <p>This was an expansion of my original ImgurClone project. It's goal was to allow for scalability in the program. Images are stored on separate web apps which communicate through one "server" web app.</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/mturiansky/LiteralLabView"><i class="fa fa-flask fa-5x"></i></a><br>
+                    <h3>LiteralLabView</h3>
+                    <p>This project has two parts. A Java based client which takes a picture with a webcam and takes a screenshot and sends it to a website. The second part is the website which stores the image and serves it up to users with login credentials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- basic contact information, will include social media links -->
+    <section id="contact">
+        <div class="container text-center">
+            <div class="page-header">
+                <h1>Contact Information</h1>
+            </div>
+
+            <!-- we use col-xs in here so that icons stay on the same line in mobile mode -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-xs-6"><a href="https://github.com/mturiansky"><i class="fa fa-github fa-4x"></i></a></div>
+                    <div class="col-xs-6"><a href="https://player.spotify.com/user/howslyfebeen"><i class="fa fa-spotify fa-4x"></i></a></div>
+                </div>
+                <div class="col-md-4">
+                    <p style="margin: auto;"><b>Mark Turiansky</b><br><a href="http://mturiansky.github.io">http://mturiansky.github.io</a><br><a href="mailto:mturiansky@ufl.edu">mturiansky@ufl.edu</a></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-xs-6"><a href="https://twitter.com/markkturk"><i class="fa fa-twitter fa-4x"></i></a></div>
+                    <div class="col-xs-6"><a href="https://www.facebook.com/mark.turiansky"><i class="fa fa-facebook fa-4x"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
