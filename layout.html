@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- nothing should come before this -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- break -->
+        <title>Mark Turiansky</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!-- font awesome icons -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="custom.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#main">Mark Turiansky</a>
+                </div><!-- navbar-header -->
+
+                <!-- list of links to different views of the website -->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="main-button" class="active"><a href="#main">Main</a></li>
+                        <li id="about-button"><a href="#about">About</a></li>
+                        <li id="resume-button"><a href="#resume">Resume</a></li>
+                        <li id="projects-button"><a href="#projects">Projects</a></li>
+                        <li id="contact-button"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!-- navbar -->
+
+            </div><!-- container -->
+        </nav>
+
+        {% block body %}{% endblock %}
+
+        <!-- footer -->
+        <section id="footer">
+            <div class="container text-center" id="foot-vert-center">
+                <h4>&copy 2015 Mark Turiansky</h4>
+            </div>
+        </section>
+
+        <!-- load js modules at the end for performance -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="custom.js"></script>
+    </body>
+</html>

@@ -14,5 +14,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/mturiansky/mturiansky.github.io/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "swig": "~1.4.2"
   }
 }
