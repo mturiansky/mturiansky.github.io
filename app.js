@@ -11,14 +11,32 @@ app.use(express.static('static'));
 
 app.use(function (req, res, next) {
     var d = new Date();
-    console.log('[%s][/%s] Request from %s', d.toLocaleTimeString(), req.baseUrl, req.ip);
+    var u = req.originalUrl;
+    if (u.length > 15) {
+        u = u.substr(u.length - 15);
+    } else {
+        while (u.length < 15) {
+            u += ' ';
+        }
+    }
+    console.log('[%s][%s] Request from %s', d.toLocaleTimeString(), u, req.ip);
     next();
 });
 
 app.get('/', function (req, res) {
-    res.render('main', {}, function (err, html) {
+    res.render('main', { custommailjs:false }, function (err, html) {
         res.send(html);
     });
+});
+
+app.get('/send_mail', function (req, res) {
+    res.render('send_mail', { custommailjs:true }, function (err, html) {
+        res.send(html);
+    });
+});
+
+app.post('/send_mail', function (req, res) {
+
 });
 
 var server = app.listen(3000, function () {

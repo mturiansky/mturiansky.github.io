@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <section id="send_mail">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>Send Me Mail!</h1>
+            </div>
+
+            <form>
+                <div class="form-group col-md-6">
+                    <label for="nameinput">Name</label>
+                    <input type="text" class="form-control" id="nameinput" placeholder="John Doe">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="emailinput">Email Address</label>
+                    <input type="email" class="form-control" id="emailinput" placeholder="Email">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="">Message</label>
+                    <textarea id="messageinput" class="form-control" rows=10 placeholder="Enter your message here!"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

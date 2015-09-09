@@ -23,7 +23,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#main">Mark Turiansky</a>
+                    <a class="navbar-brand" href="/">Mark Turiansky</a>
                 </div><!-- navbar-header -->
 
                 <!-- list of links to different views of the website -->
@@ -34,6 +34,7 @@
                         <li id="resume-button"><a href="#resume">Resume</a></li>
                         <li id="projects-button"><a href="#projects">Projects</a></li>
                         <li id="contact-button"><a href="#contact">Contact</a></li>
+                        <li id="send_mail-button"><a href="/send_mail">Mail Me</a></li>
                     </ul>
                 </div><!-- navbar -->
 
@@ -52,6 +53,6 @@
         <!-- load js modules at the end for performance -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="bootstrap.min.js"></script>
-        <script src="custom.js"></script>
+        {% if custommailjs %}<script src="custom-mail.js"></script>{% else %}<script src="custom.js"></script>{% endif %}
     </body>
 </html>

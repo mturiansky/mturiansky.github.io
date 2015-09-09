@@ -72,6 +72,15 @@ a:hover {
     color: #440101;
 }
 
+#send_mail {
+    background-color: #7e1726;
+    color: #99aabb;
+}
+
+#messageinput {
+    max-width: 100%;
+}
+
 #footer {
     background-color: #bbbbbb;
     max-height: 15vh;
