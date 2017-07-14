@@ -21,7 +21,7 @@ a:hover {
 /*definitions for each of the views*/
 
 #main {
-    background-image: url("http://mturiansky.github.io/lab.jpg");
+    background-image: url("https://mturiansky.github.io/lab.jpg");
     background-size: cover;
     max-height: 100vh;
 }
